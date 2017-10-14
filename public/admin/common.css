@@ -1,0 +1,10 @@
+// 通用样式
+.tx-l {
+	text-align: left;
+}
+.tx-c {
+	text-align: center;
+}
+.tx-r {
+	text-align: right;
+}

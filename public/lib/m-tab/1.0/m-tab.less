@@ -1,0 +1,37 @@
+/* 变量 */
+@primary: #2c9d71; // 主色
+@default: #49dfa5; // 副色
+.m-tab {
+	overflow-x: scroll;
+	margin-bottom: 10px;
+
+	&::-webkit-scrollbar { 
+		display:none;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		overflow: hidden;
+		background-color: #fff;
+	}
+
+	li {
+		float: left;
+		padding: 10px 0;
+		text-align: center;
+		border-bottom: 2px solid transparent;
+
+		&.cur {
+			border-color: @primary;
+		}
+	}
+}
+.m-card {
+	padding: 10px;
+
+	& > div {
+		position: relative;
+	}
+}

@@ -1,0 +1,106 @@
+.tab {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+
+    thead {
+        text-align: left;
+        vertical-align: bottom;
+    }
+
+    th {
+        padding: .5rem;
+        font-size: @table-title-size;
+    }
+
+    td {
+        padding: .5rem;
+        border-bottom: .05rem solid transparent;
+        font-size: @table-tx-size;
+    }
+
+    &.tab-border {
+        border: .05rem solid transparent;
+
+        thead {
+            border-bottom: .05rem solid transparent;
+        }
+
+        th {
+            border-left: .05rem solid transparent;
+            &:first-child {
+                border-left-width: 0;
+            }
+        }
+
+        td {
+            border-left: .05rem solid transparent;
+            &:first-child {
+                border-left-width: 0;
+            } 
+        }
+    }
+
+    &.tab-default {
+        thead {
+            background-color: @table-bg-default;
+            color: @table-tx-default;
+        }
+
+        td {
+            border-color: @table-border-default;
+        }
+
+        &.tab-border {
+            border-color: @table-border-default;
+
+            thead {
+                background-color: transparent;
+                border-bottom-color: @table-border-default;
+            }
+
+            th {
+                border-left-color: @table-border-default;
+            }
+
+            td {
+                border-left-color: @table-border-default;
+            }
+        }
+
+    }
+
+    &.tab-primary {
+        thead {
+            background-color: @table-bg-primary;
+            color: @table-tx-primary;
+        }
+
+        td {
+            border-color: @table-border-primary;
+        }
+
+        &.tab-border {
+            border-color: @table-border-primary;
+
+            thead {
+                color: @table-border-primary;
+                background-color: transparent;
+                border-bottom-color: @table-border-primary;
+            }
+
+            th {
+                border-left-color: @table-border-primary;
+            }
+
+            td {
+                border-left-color: @table-border-primary;
+            }
+        }
+
+    }
+
+}
+
+
